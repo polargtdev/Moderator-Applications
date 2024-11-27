@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="start-screen">
-        <h1>Would you like to apply for Moderator?</h1>
-        <div class="button-container">
-            <button id="begin-button" class="animated-button">Begin</button>
-            <button id="cancel-button" class="text-button">Cancel</button>
+    <header>
+        <div id="user-info" class="hidden">
+            <img id="user-avatar" src="" alt="User Avatar">
+            <span id="user-name"></span>
         </div>
+    </header>
+    <div id="start-screen">
+        <button id="login-button" class="discord-login">
+            <img src="https://static.vecteezy.com/system/resources/previews/018/930/500/non_2x/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Logo">
+            Log in with Discord
+        </button>
+        <button id="begin-button" class="animated-button hidden">Begin</button>
     </div>
 
     <div id="application-screen" class="hidden">
