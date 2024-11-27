@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderator Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="start-screen">
+        <h1>Would you like to apply for Moderator?</h1>
+        <div class="button-container">
+            <button id="begin-button" class="animated-button">Begin</button>
+            <button id="cancel-button" class="text-button">Cancel</button>
+        </div>
+    </div>
+
+    <div id="application-screen" class="hidden">
+        <h2>Moderator Application</h2>
+        <form id="application-form">
+            <div class="question">
+                <label for="question1">Why do you want to be a moderator? (Long Answer)</label>
+                <textarea id="question1" name="question1" required></textarea>
+            </div>
+            <div class="question">
+                <label for="question2">Select your strengths (Select all that apply):</label>
+                <div>
+                    <label><input type="checkbox" name="strengths" value="Leadership"> Leadership</label>
+                    <label><input type="checkbox" name="strengths" value="Communication"> Communication</label>
+                    <label><input type="checkbox" name="strengths" value="Technical Skills"> Technical Skills</label>
+                </div>
+            </div>
+            <div class="question">
+                <label for="question3">How many hours can you dedicate per week? (Short Answer)</label>
+                <input type="text" id="question3" name="question3" required>
+            </div>
+            <div class="question">
+                <label>What experience do you have? (Multiple Choice)</label>
+                <div>
+                    <label><input type="radio" name="experience" value="None" required> None</label>
+                    <label><input type="radio" name="experience" value="Some"> Some</label>
+                    <label><input type="radio" name="experience" value="Extensive"> Extensive</label>
+                </div>
+            </div>
+            <button type="submit" class="animated-button">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
