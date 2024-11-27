@@ -9,7 +9,7 @@ document.getElementById('cancel-button').addEventListener('click', () => {
 
 document.getElementById('application-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const webhookUrl = 'YOUR_DISCORD_WEBHOOK_URL';
+    const webhookUrl = 'https://discord.com/api/webhooks/1311226587487670354/bGTgCUNXXQVxGNMmJEYXNX-SbKdfJx5IbthjAWd_icZ42Z-uDlh9pzqZ3tdh6kOsRjT7';
     const formData = new FormData(e.target);
 
     const embedFields = [];
